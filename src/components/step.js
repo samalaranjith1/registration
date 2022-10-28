@@ -6,7 +6,6 @@ export default function Step(props) {
             <div className="circleWrapper" onClick={() => props.updateStep(props.index + 1)}>
                 <div className="circle">{props.index + 1}</div>
             </div>
-            <span className="labelName">{props.label}</span>
         </div>
     )
 }

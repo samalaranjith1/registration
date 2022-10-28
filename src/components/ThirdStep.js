@@ -1,6 +1,6 @@
 import React from 'react'
-import single from './self.jpeg'
-import team from "./team.jpeg"
+import single from '../images/self.jpeg'
+import team from "../images/team.jpeg"
 
 function ThirdStep({handleFormData,updateStep}) {
     const submitFormData = (e) => {

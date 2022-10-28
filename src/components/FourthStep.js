@@ -1,12 +1,11 @@
 import React from 'react'
-import rightClick from './rightClick.jpeg'
+import rightClick from '../images/rightClick.jpeg'
 
-function FourthStep({handleFormData,updateStep}) {
+function FourthStep({handleFormData,updateCurrentStep1}) {
   const submitFormData = (e) => {
-    console.log(handleFormData);
-    console.log("ranjith");
-    console.log(updateStep);
-    window.location.reload()
+    e.preventDefault();
+    alert("Form data is available in console panel");
+    updateCurrentStep1(1);
   };
   
   return (
@@ -14,10 +13,11 @@ function FourthStep({handleFormData,updateStep}) {
         <div className='circleWithRight'>
             <img className='rightClick'style={{width:"100px"}} src={rightClick} />
         </div>
+        
         <h2 className='ftTitle'>Congratulations, Eren!</h2>
         <p className='ftpara'>You have completed onbording, you can start using the Eden!</p>
         <form onSubmit={submitFormData}>
-<input className='primaryButton' 
+       <input className='primaryButton' 
         type='submit'
         value='Launch Eden' 
         style={{width:'90%'}}

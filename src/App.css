@@ -184,7 +184,7 @@ margin-top: 50px;
   width:45%;
   clear: both;
 }
-.option1:hover,.option:hover{
+.option1:hover,.option2:hover{
   border: 2px solid rgb(102, 157, 239);
 }
 
